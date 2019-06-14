@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import * as styles from './App.scss';
+import Button from './Button';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,12 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+        <button
+          className={styles.btn}
+          onClick={() => alert('I am globally styled')}>
+          I am button 1 - Press Me
+        </button>
+        <Button />
       </header>
     </div>
   );
