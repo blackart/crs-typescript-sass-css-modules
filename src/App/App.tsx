@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './assets/images/logo.svg';
+import logo from '../assets/images/logo.svg';
 import * as styles from './App.scss';
-import Button from './components/Button/Button';
+import Button from '../components/Button/Button';
 
 const App: React.FC = () => {
   return (
