@@ -1,3 +1,4 @@
+export const main: string;
 export const app: string;
 export const appLogo: string;
 export const appLogoSpin: string;
