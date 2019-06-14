@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/classnames": "^2.2.8",
     "@types/jest": "24.0.14",
     "@types/node": "12.0.8",
     "@types/react": "16.8.20",
     "@types/react-dom": "16.8.4",
+    "classnames": "^2.2.6",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -14,7 +16,7 @@
     "typescript": "3.5.2"
   },
   "scripts": {
-    "watch:scss": "tsm src -w",
+    "watch:scss": "tsm src --watch --nameFormat none --exportType default",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

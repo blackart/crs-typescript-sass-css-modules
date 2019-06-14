@@ -1,8 +1,7 @@
 import React from 'react';
-import * as styles from './Button.module.scss';
+import styles from './Button.module.scss';
 
 const Button = () => {
-    console.debug(styles);
     return (
       <>
           <button

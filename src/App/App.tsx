@@ -1,18 +1,20 @@
 import React from 'react';
 import logo from '../assets/images/logo.svg';
-import * as styles from './App.module.scss';
+import styles from './App.module.scss';
 import Button from '../components/Button/Button';
+
+let clickButtonHandler = () => alert('I am globally styled');
 
 const App: React.FC = () => {
   return (
-    <div className={styles.app}>
-      <header className={styles.appHeader}>
-        <img src={logo} className={styles.appLogo} alt="logo" />
+    <div className={styles.App}>
+      <header className={styles['App-header']}>
+        <img src={logo} className={styles["App-logo"]} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-          className={styles.appLink}
+          className={styles["App-link"]}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,13 +23,13 @@ const App: React.FC = () => {
         </a>
         <button
           className={styles.btn}
-          onClick={() => alert('I am globally styled')}>
+          onClick={clickButtonHandler}>
           I am button 1 - Press Me
         </button>
         <Button />
       </header>
     </div>
   );
-}
+};
 
 export default App;

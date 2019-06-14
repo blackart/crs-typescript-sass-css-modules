@@ -1,7 +1,14 @@
-export const main: string;
-export const app: string;
-export const appLogo: string;
-export const appLogoSpin: string;
-export const appHeader: string;
-export const appLink: string;
-export const btn: string;
+export interface Styles {
+  'App': string;
+  'App-logo': string;
+  'App-logo-spin': string;
+  'App-header': string;
+  'App-link': string;
+  'btn': string;
+}
+
+export type ClassNames = keyof Styles;
+
+declare const styles: Styles;
+
+export default styles;
