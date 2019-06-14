@@ -1,5 +1,6 @@
 import React from 'react';
-import * as styles from './Button.scss';
+import * as styles from './Button.module.scss';
+
 const Button = () => {
     console.debug(styles);
     return (
